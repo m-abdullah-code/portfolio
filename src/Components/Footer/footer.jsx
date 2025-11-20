@@ -1,5 +1,4 @@
-import React from 'react'
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const footer = () => {
 
@@ -13,7 +12,7 @@ const footer = () => {
 
 
   return (
-    <footer className='text-white py-8 px-[12vw] md:px[7vw] lg:px-[20vw]'>
+    <footer className='text-white py-8  max-w-7xl mx-auto px-5'>
       <div className='container mx-auto text-center'>
         <h2 className='text-xl font-semibold text-purple-500'>
           Muhammad Abdullah
@@ -41,11 +40,11 @@ const footer = () => {
         {/* Social Media Icons */}
         <div className='flex flex-wrap justify-center space-x-4 mt-6'>
           {[
-            { icon: <FaFacebook />, link: "" },
-            { icon: <FaTwitter />, link: "" },
+            // { icon: <FaFacebook />, link: "" },
+            // { icon: <FaTwitter />, link: "" },
             { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/m-abdullah557/" },
-            { icon: <FaInstagram />, link: "" },
-            { icon: <FaYoutube />, link: "" },
+            // { icon: <FaInstagram />, link: "" },
+            { icon: <FaGithub />, link: "https://github.com/M-Abdullah-code" },
           ].map((item, index) => (
             <a
               key={index}
@@ -61,9 +60,10 @@ const footer = () => {
         </div>
 
         {/* Copyright text */}
-        <p className='text-sm text-gray-400 mt-6'>
-          © 2025 Muhammad Abdullah. All rights reserved.
+        <p className="text-sm text-gray-400 mt-6">
+          © {new Date().getFullYear()} Muhammad Abdullah. All rights reserved.
         </p>
+
       </div>
     </footer>
   )

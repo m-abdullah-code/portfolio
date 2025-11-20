@@ -1,4 +1,3 @@
-import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 import ProfileImg from '../../assets/profile2.png'
 import ReactParallaxTilt from 'react-parallax-tilt'
@@ -7,7 +6,7 @@ const about = () => {
   return (
     <section
       id='about'
-      className='py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32'
+      className='py-4  max-w-7xl mx-auto px-5 font-sans mt-16 md:mt-24 lg:mt-32'
     >
 
       <div className='flex flex-col-reverse md:flex-row justify-between items-center'>
@@ -26,7 +25,7 @@ const about = () => {
             </span>
             <span style={{ color: '#8245ec' }}>
               <Typewriter
-                words={['Front end Developer', 'React Developer', 'UI/UX Designe', 'Custom Web Design', 'Coder', 'Performance Optimization']}
+                words={['Front end Developer', 'React Developer', 'API Integration', 'UI/UX Designe', 'Custom Web Design', 'Performance Optimization']}
                 loop
                 cursor
                 cursorStyle='|'
@@ -38,8 +37,8 @@ const about = () => {
           </h3>
           {/* About ME paragraph */}
           <p className='text-base sm:text-lg text-gray-400 mb-10 mt-8 leading-relaxed'>
-            {/* Creative and detail-oriented Front-End Developer with 2+ years of experience building responsive, user-friendly websites from sleek portfolios to dynamic eCommerce platforms. Skilled in HTML, CSS, Bootstrap, JavaScript, and jQuery, with a strong focus on clean design, performance, and cross-browser compatibility. Adept at both developing from scratch and optimizing existing sites to enhance functionality and visual appeal. Currently expanding expertise in React.js to deliver modern, component-based web applications that align with user needs and business goals. */}
-            Front-End Developer with 2+ years of experience creating responsive, user-friendly websites, from portfolios to eCommerce platforms. Skilled in HTML, CSS, Bootstrap, JavaScript, and jQuery, with a focus on clean design and performance. Currently enhancing expertise in React.js to deliver modern, dynamic web applications tailored to client needs.
+            Front-End React Developer with 2+ years of experience in building modern, responsive, and scalable web applications. Highly skilled in React.js, Tailwind CSS, JavaScript, API integration, Bootstrap, HTML, CSS, PHP, jQuery. I specialize in creating clean UI/UX, dynamic components, authentication flows, dashboards, and AI-assisted calling interfaces. <br />
+            Focused on writing maintainable code, optimizing performance, and delivering pixel-perfect, production-ready solutions. Passionate about continuous learning, problem-solving, and turning complex requirements into smooth, user-friendly experiences.
           </p>
           {/* Resume button */}
           <a href="https://drive.google.com/file/d/1SuijmLslpX2V1E7l2bD9VIErbK38qWhd/view?usp=sharing" target='_black' rel="noopener noreferrer"

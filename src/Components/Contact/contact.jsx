@@ -48,7 +48,7 @@ const contact = () => {
 
   return (
     <section id='contact'
-      className='flex flex-col items-center justify-center py-24 px-[12vw] md:px-[7vw] lg:px-[20vw]'>
+      className='flex flex-col items-center justify-center py-24  max-w-7xl mx-auto px-5'>
 
       <ToastContainer />
 
