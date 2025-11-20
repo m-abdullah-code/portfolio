@@ -7,7 +7,7 @@ import Experience from "./Components/Experience/experience"
 import Footer from "./Components/Footer/footer"
 import Skills from "./Components/Skills/skills"
 import Work from "./Components/Work/work"
-import BlurBlob from './blurBlob'
+import BlurBlob from './BlurBlob'
 
 function App() {
 
