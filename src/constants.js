@@ -3,6 +3,7 @@ import htmlLogo from './assets/tech_logo/html.png';
 import cssLogo from './assets/tech_logo/css.png';
 import javascriptLogo from './assets/tech_logo/javascript.png';
 import reactjsLogo from './assets/tech_logo/reactjs.png';
+import nextjsLogo from './assets/tech_logo/nextjs.png';
 import tailwindcssLogo from './assets/tech_logo/tailwindcss.png';
 import bootstrapLogo from './assets/tech_logo/bootstrap.png';
 import jQueryLogo from './assets/tech_logo/jQuery.png';
@@ -29,6 +30,10 @@ import romaLogo from './assets/work_logo/roma.png';
 import qualaImg from './assets/work_logo/quala.png';
 import bativieImg from './assets/work_logo/bativie.png';
 import bengingiImg from './assets/work_logo/bengingi.png';
+import inokronImg from './assets/work_logo/inokron-proj.png'
+import sumaImg from './assets/work_logo/suma.png'
+import michealImg from './assets/work_logo/micheal-proj.png'
+import paulImg from './assets/work_logo/paul-proj.png'
 
 
 export const SkillsInfo = [
@@ -39,6 +44,7 @@ export const SkillsInfo = [
         {name: 'CSS', logo: cssLogo}, 
         {name: 'JavaScript', logo: javascriptLogo},
         {name: 'React JS', logo: reactjsLogo},   
+        {name: 'Next JS', logo: nextjsLogo},
         {name: 'Tailwind CSS', logo: tailwindcssLogo},
         {name: 'Bootstrap', logo: bootstrapLogo},
         {name: 'jQuery', logo: jQueryLogo}
@@ -73,19 +79,26 @@ export const experiences = [
     {
       id: 0,
       img: artificizen,
-      role: "React Developer",
+      role: "Frontend Developer",
       company: "Artificizen",
+      location: "Lahore, Pakistan",
       date: "Oct 2025 - Present",
-      desc: "React Developer specializing in building responsive, data-driven web applications with React.js, Tailwind CSS, and REST API integration. Experienced in creating dynamic UI components, authentication flows, dashboards, and AI-powered calling interfaces. Skilled in state management, reusable component design, and writing clean, maintainable code. Focused on performance, smooth user experience, and delivering production-ready frontend solutions.",
+      desc: [
+        "Led frontend development using React.js, Next.js and integrated APIs for dynamic data rendering",
+        "Implemented advanced React concepts including Hooks, Context API, and React Router for seamless navigation and state management",
+        "Built responsive and interactive UI components using Tailwind CSS and Framer Motion",
+        "Collaborated with cross-functional teams to deliver high-quality, production-ready web solutions"
+      ],
       skills: [
         "React js",
+        "Next js",
+        "React Hooks",
+        "React Router",
+        "State Management",
         "Api Integration",
         "Tailwind css",
         "HTML",
-        "CSS",
-        "Bootstrap",
-        "JavaScript",
-        "jQuery"
+        "CSS"
       ]  
     },
     {
@@ -93,8 +106,13 @@ export const experiences = [
       img: defaultImg,
       role: "Front End Developer",
       company: "Exact Themes",
+      location: "Lahore, Pakistan",
       date: "May 2024 - August 2025",
-      desc: "Developed 10+ responsive websites using HTML, CSS, Bootstrap, and JavaScript, including eCommerce and portfolio projects. Redesigned outdated UIs, improved performance, and converted Figma/XD designs into pixel-perfect interfaces. Optimized PageSpeed scores and used AI tools like ChatGPT and GitHub Copilot to speed up development and enhance code quality.",
+      desc: [
+        "Developed 10+ responsive websites using HTML, CSS, Bootstrap, and JavaScript",
+        "Converted Figma/XD designs into pixel-perfect, responsive web interfaces",
+        "Optimized web performance and PageSpeed scores for various client projects"
+      ],
       skills: [
         "HTML",
         "CSS",
@@ -107,9 +125,14 @@ export const experiences = [
       id: 2,
       img: metaViz,
       role: "Web Developer",
-      company: "Webverse Digital",
+      company: "MetaViz",
+      location: "Lahore, Pakistan",
       date: "April 2023 - March 2024",
-      desc: "Developed dynamic front-end features animated components, data-driven UI for two long-term projects. Fixed 50+ bugs across legacy codebases, improving site stability and reducing clientreported issues.",
+      desc: [
+        "Developed dynamic front-end features and animated components for multiple projects",
+        "Fixed 50+ bugs across legacy codebases, improving site stability and performance",
+        "Implemented data-driven UI components using PHP and JavaScript"
+      ],
       skills: [
         "HTML",
         "CSS",
@@ -154,8 +177,9 @@ export const projects = [
     id: 0,
     title: "Roma",
     description:
-      "Roma — Empowering your security at every stage, from Startup to SMB to Enterprise. This project showcases a modern, security-focused digital experience crafted to represent Roma’s mission of delivering reliable protection and confidence across businesses of all sizes.",
+      "Roma — Empowering security at every stage, from Startup to SMB to Enterprise with reliable protection.",
     image: romaLogo,
+    category: "WordPress",
     tags: ["HTML", "CSS", "JavaScript", "jQuery", "JavaScript", "PHP"],
     github: "https://github.com/m-abdullah-code/roma.git",
     webapp: "https://armadasec.co/",
@@ -164,8 +188,9 @@ export const projects = [
     id: 1,
     title: "Quala",
     description:
-      "Quala — We’re the Koalas, a creative-strategic team blending organizational psychology, gamified learning, theater, and Air-Force-grade debriefs to design unforgettable experiences. This project reflects Quala’s mission of sparking insight, building connection, and driving leadership transformation with playful yet powerful impact.",
+      "Quala — A creative-strategic team blending psychology and gamified learning to design unforgettable experiences.",
     image: qualaImg,
+    category: "WordPress",
     tags: ["HTML", "CSS", "JavaScript", "jQuery", "PHP"],
     github: "https://github.com/m-abdullah-code/quala.git",
     webapp: "https://qualagroup.com/en/",
@@ -174,8 +199,9 @@ export const projects = [
     id: 2,
     title: "Bativie",
     description:
-      "Bativie — Restoring Life and Hope to the Neighborhoods. This project represents Bativie’s mission of community revival, focusing on impactful design and meaningful digital presence that supports neighborhood upliftment and renewed hope.",
+      "Bativie — Restoring life and hope to neighborhoods through impactful design and community-focused digital presence.",
     image: bativieImg,
+    category: "WordPress",
     tags: ["HTML", "CSS", "JavaScript", "jQuery", "PHP"],
     github: "https://github.com/m-abdullah-code/bativie.git",
     webapp: "https://bativie.com/",
@@ -184,11 +210,56 @@ export const projects = [
     id: 3,
     title: "Bengingi",
     description:
-      "Bengingi — If you want to cook our food. This project reflects the culture, flavor, and identity of Bengingi, designed to bring their culinary spirit to digital life with a warm, inviting, and authentic experience.",
+      "Bengingi — Bringing authentic culinary spirit to life with a warm, inviting, and authentic digital experience.",
     image: bengingiImg,
+    category: "WordPress",
     tags: ["HTML", "CSS", "JavaScript", "jQuery", "PHP", "WordPress"],
     github: "https://github.com/m-abdullah-code/bengingi.git",
     webapp: "https://www.bengingi.com/",
+  },
+  {
+    id: 4,
+    title: "Smart Feed Monitoring",
+    description:
+      "Inokron is a comprehensive livestock farm management system designed to monitor and manage animal health, feed schedules, and barn climate conditions. It features real-time alerts for heat stress, predictive feed status monitoring, multi-language support (English and Slovenian), and an intuitive dashboard with climate charts and analytics — streamlining farm operations through automation and data-driven insights.",
+    image: inokronImg,
+    category: "React/Next",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "API Integration", "Recharts", "Redux Toolkit", "Responsive Web Design"],
+    github: "https://github.com/M-Abdullah-code",
+    webapp: "http://72.146.216.68:3000/dashboard",
+  },
+  {
+    id: 5,
+    title: "Suma (Automotive Calling Agent)",
+    description:
+      "Suma is an AI-powered automotive calling agent that enables businesses to manage voice calls, schedule appointments, and automate customer interactions. It integrates Retell API for intelligent voice responses, provides a user-friendly dashboard for call tracking, and streamlines appointment booking with secure authentication.",
+    image: sumaImg,
+    category: "React/Next",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "API Integration", "Recharts", "Redux Toolkit"],
+    github: "https://github.com/M-Abdullah-code",
+    webapp: "http://13.62.92.163:3000/",
+  },
+  {
+    id: 6,
+    title: "AIRag (AI-Powered Document Intelligence Platform)",
+    description:
+      "This is an AI RAG (Retrieval Augmented Generation) Application built with React, TypeScript, and Vite. It enables users to upload documents, YouTube URLs, and web content, then interact with them through an AI-powered chat interface. The project includes authentication, role-based access (admin/user), and document management with Tailwind CSS styling.",
+    image: michealImg,
+    category: "React/Next",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "API Integration", "Recharts", "Redux Toolkit", "Responsive Web Design"],
+    github: "https://github.com/M-Abdullah-code",
+    webapp: "http://18.190.215.175:3000/",
+  },
+  {
+    id: 7,
+    title: "Paul AI Dialer (Smart Outbound Calling Platform)",
+    description:
+      "Paul AI Dialer is a web-based AI-powered calling platform built with React, TypeScript, and Vite. It enables users to manage campaigns, schedule appointments, configure AI voice agents, and create automated call flows using Retell integration. Designed for sales teams and call centers, it provides automated outbound calling with AI-driven voice interactions, dashboard analytics, and CSV contact import for bulk dialing operations.",
+    image: paulImg,
+    category: "React/Next",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "API Integration", "Recharts", "Redux Toolkit"],
+    github: "https://github.com/M-Abdullah-code",
+    webapp: "http://3.135.250.76:5173/",
   }
 ];
   
