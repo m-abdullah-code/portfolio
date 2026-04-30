@@ -33,7 +33,7 @@ import bengingiImg from './assets/work_logo/bengingi.png';
 import inokronImg from './assets/work_logo/inokron-proj.png'
 import sumaImg from './assets/work_logo/suma.png'
 import michealImg from './assets/work_logo/micheal-proj.png'
-import paulImg from './assets/work_logo/paul-proj.png'
+import paulImg from './assets/work_logo/Paul-proj.png'
 
 
 export const SkillsInfo = [
